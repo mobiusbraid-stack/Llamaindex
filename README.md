@@ -22,9 +22,9 @@ By lifting high-dimensional point distances into a 1-form contact manifold ($\al
 
 | Metric | Standard LlamaIndex + Qdrant | BraidMesh Topological Snap | Delta |
 | :--- | :---: | :---: | :---: |
-| Cluster Boundary Overlap** | 14.2% | 0.0% | -14.2 pp |
+| Cluster Boundary Overlap | 14.2% | 0.0% | -14.2 pp |
 | Recall@10 | 71.4% | 80.0% | +8.6 pp |
-| Query Latency** | 1.41 ms | 1.42 m | +0.01 ms |
+| Query Latency | 1.41 ms | 1.42 m | +0.01 ms |
 | API Re-Embedding Cost | $0.00 | $0.00 | $0.00 |
 
 ---
@@ -63,7 +63,7 @@ The transformation enforces the Legendrian contact condition across boundary int
 
 \alpha = dz - y\,dx = 0 \implies y(x) = \frac{dz}{dx}
 
-Where y(x) represents the Reeb vector field slope lift that resolves non-integrable $H_1 = 3$ Betti-1 voids along vector cluster edges.
+Where y(x) represents the Reeb vector field slope lift that resolves non-integrable H_1 = 3 Betti-1 voids along vector cluster edges.
 
 ---
 
