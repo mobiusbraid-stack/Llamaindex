@@ -7,9 +7,9 @@
 
 When deploying RAG pipelines using standard vector stores (e.g., Qdrant, Milvus, pgvector) with LlamaIndex default chunking (512 tokens / 64 overlap), high-dimensional embedding spaces suffer from **silent boundary overlaps**. 
 
-In standard greedy HNSW graph traversals (`ef_search=64`), queries frequently get trapped in local topological voids ($H_1 = 3 Betti-1 voids). Increasing search budgets expands search scope within the wrong basin without crossing manifold boundaries.
+In standard greedy HNSW graph traversals (`ef_search=64`), queries frequently get trapped in local topological voids (H_1 = 3 Betti-1 voids). Increasing search budgets expands search scope within the wrong basin without crossing manifold boundaries.
 
-By lifting high-dimensional point distances into a 1-form contact manifold ($\alpha = dz - y\,dx = 0), BraidMesh snaps cluster boundaries in-place without requiring model re-embeddings or graph structure modifications.
+By lifting high-dimensional point distances into a 1-form contact manifold (\alpha = dz - y\,dx = 0), BraidMesh snaps cluster boundaries in-place without requiring model re-embeddings or graph structure modifications.
 
 ---
 
