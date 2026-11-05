@@ -34,9 +34,9 @@ Evaluation performed on $N = 400$ held-out queries (250 Stack Overflow queries, 
 
 ## Analysis of the 9 Flip-to-Fail Queries
 
-Out of 372 reachable queries, 38 queries flipped from Fail to Pass**, while 9 queries flipped from Pass to Fail**. 
+Out of 372 reachable queries, 38 queries flipped from Fail to Pass**, while 9 queries flipped from Pass to Fail. 
 
-This occurs due to a **geometric boundary displacement effect**: queries that sit directly on the immediate perimeter of a neighboring cluster (holding Rank 9 or 10 in baseline) experience a minor local density shift when contact snapping resolves larger out-of-vocabulary voids nearby. This nudges borderline near-neighbors down from Rank 10 to Rank 11 or 12.
+This occurs due to a geometric boundary displacement effect: queries that sit directly on the immediate perimeter of a neighboring cluster (holding Rank 9 or 10 in baseline) experience a minor local density shift when contact snapping resolves larger out-of-vocabulary voids nearby. This nudges borderline near-neighbors down from Rank 10 to Rank 11 or 12.
 
 Example A: `"socket.gethostbyname_ex return type"` (Rank 9 \to Rank 12)
 Example B: `"asyncio loop set_exception_handler"` (Rank 10 \to Rank 11)
@@ -47,6 +47,6 @@ Example B: `"asyncio loop set_exception_handler"` (Rank 10 \to Rank 11)
 
 1. Clone & Install:
    ```bash
-   git clone [https://github.com/mobiusbraid-stack/llamaindex-topological-audit.git](https://github.com/braidmesh/llamaindex-topological-audit.git)
+   git clone [https://github.com/mobiusbraid-stack/llamaindex.git](https://github.com/braidmesh/llamaindex.git)
    cd llamaindex-topological-audit
    pip install -r requirements.txt
